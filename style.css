@@ -101,6 +101,14 @@ body {
   margin-bottom: 5px;
   color: white;
 }
+.mega-menu-single-link{
+    margin-top: 38px;
+}
+.mega-menu-single-link a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
 .mega-menu-arrow-flex{
     display: flex;
     justify-content: space-between;
@@ -147,7 +155,7 @@ body {
     transition: transform 0.3s;
 }
 .mega-menu-links-area input[type="checkbox"]:checked ~ .mega-menu-inner-data {
-  max-height: 1000px;
+  max-height: 2000px;
 }
 /* mega-menu-links area end */
 
