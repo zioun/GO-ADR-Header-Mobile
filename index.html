@@ -1,24 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="header-area">
-      <div class="container">
-        <div class="mega-menu-area">
-          <div class="logo-area">
-            <img src="./images/header-logo-m.svg" alt="" />
-          </div>
-          <div class="menu-icon-area">
-            <img class="open-icon" src="./images/header-menu-icon-m.svg" alt="" />
-            <img class="close-icon" src="./images/header-lose-icon-m.svg" alt="" />
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pure CSS Mega Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header-area">
+    <div class="mega-menu-area">
+      <div class="logo-area">
+        <img src="./images/header-logo-m.svg" alt="Logo" />
+      </div>
+
+      <!-- Checkbox for toggle -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="icon-label">
+        <img class="open-icon" src="./images/header-menu-icon-m.svg" alt="open" />
+        <img class="close-icon" src="./images/header-lose-icon-m.svg" alt="close" />
+      </label>
+
+      <!-- Mega Menu -->
+      <div class="mega-menu-links-area">
+        <div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
 </html>

@@ -1,120 +1,89 @@
-@import url(https://db.onlinewebfonts.com/c/88f10bf18a36407ef36bf30bc25a3618?family=SuisseIntl-Regular);
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: rgb(109, 109, 109);
+body {
+  font-family: Arial, sans-serif;
+  background: #eee;
 }
-.header-area{
-    background-color: white;
+.header-area {
+  background-color: white;
+  padding: 10px 15px;
 }
-.container{
-    max-width: 1250px;
-    margin: auto;
-    position: relative;
-    padding: 10px 15px;
+.mega-menu-area {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  position: relative;
 }
-.mega-menu-area{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-}
-.logo-area img{
-    width: 200px;
+.logo-area img {
+  width: 200px;
 }
 
-/* menu hover effect */
-
-
-
-
-
-
-
-.menu-icon-area {
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-    width: 40px;   /* fixed width */
-    height: 40px;  /* fixed height */
+/* hide checkbox */
+#menu-toggle {
+  display: none;
 }
 
-/* icons base style */
-.menu-icon-area img {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    transition: opacity 0.3s ease;
+/* icon button */
+.icon-label {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.icon-label img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s ease;
+}
+.open-icon { opacity: 1; }
+.close-icon { opacity: 0; }
+
+/* toggle icons */
+#menu-toggle:checked + .icon-label .open-icon {
+  opacity: 0;
+}
+#menu-toggle:checked + .icon-label .close-icon {
+  opacity: 1;
 }
 
-/* initial state */
-.open-icon {
-    opacity: 1;
-    pointer-events: auto;
+/* mega menu */
+.mega-menu-links-area {
+  display: none;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  background: red;
+  width: 100%;
+  padding: 20px;
+  gap: 30px;
+  justify-content: center;
 }
-.close-icon {
-    opacity: 0;
-    pointer-events: none;
+.mega-menu-links-area ul {
+  list-style: none;
 }
-
-/* hover এ switch হবে */
-.menu-icon-area:hover .open-icon {
-    opacity: 0;
-    pointer-events: none;
+.mega-menu-links-area ul li {
+  margin: 8px 0;
 }
-.menu-icon-area:hover .close-icon {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-/* যদি close-icon এ hover করো → আবার open-icon আসবে */
-.close-icon:hover {
-    opacity: 0;
-    pointer-events: none;
-}
-.close-icon:hover ~ .open-icon {
-    opacity: 1;
-    pointer-events: auto;
+.mega-menu-links-area ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.menu-icon-area{
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+/* show menu when checked */
+#menu-toggle:checked ~ .mega-menu-links-area {
+  display: flex;
 }
 
-
-
-.menu-icon-area img{
-    width: 30px;
-}
