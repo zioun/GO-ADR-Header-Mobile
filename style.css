@@ -1,0 +1,120 @@
+@import url(https://db.onlinewebfonts.com/c/88f10bf18a36407ef36bf30bc25a3618?family=SuisseIntl-Regular);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(109, 109, 109);
+}
+.header-area{
+    background-color: white;
+}
+.container{
+    max-width: 1250px;
+    margin: auto;
+    position: relative;
+    padding: 10px 15px;
+}
+.mega-menu-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.logo-area img{
+    width: 200px;
+}
+
+/* menu hover effect */
+
+
+
+
+
+
+
+.menu-icon-area {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    width: 40px;   /* fixed width */
+    height: 40px;  /* fixed height */
+}
+
+/* icons base style */
+.menu-icon-area img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+}
+
+/* initial state */
+.open-icon {
+    opacity: 1;
+    pointer-events: auto;
+}
+.close-icon {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* hover এ switch হবে */
+.menu-icon-area:hover .open-icon {
+    opacity: 0;
+    pointer-events: none;
+}
+.menu-icon-area:hover .close-icon {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* যদি close-icon এ hover করো → আবার open-icon আসবে */
+.close-icon:hover {
+    opacity: 0;
+    pointer-events: none;
+}
+.close-icon:hover ~ .open-icon {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-icon-area{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.menu-icon-area img{
+    width: 30px;
+}
